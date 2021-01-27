@@ -1,1 +1,1 @@
-# start-project
+# Стартовая сборка с Gulp 4
