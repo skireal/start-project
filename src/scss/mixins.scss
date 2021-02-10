@@ -1,0 +1,27 @@
+// Примеси
+
+
+@mixin wrapper {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 176px;
+    padding-right: 176px;
+
+    @media screen and (max-width: $notebook) {
+
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    @media screen and (max-width: $tablet) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    @media screen and (max-width: $mobile) {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
