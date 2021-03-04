@@ -3,17 +3,14 @@ extends ../pug/layout.pug
 block meta
   title Главная
 
+block head
+  link(rel="stylesheet" href="css/style.css")
+
 block content
-  main.main
-    h2 Title
-    hr
-    p paragraph 
-    div.ddff sddsd
-    div(title='sdds') sdsdd
-    ul.items
-      li.items__t
-      li.items__t
-      li.items1__t
+    <main>
+    1include ../blocks/breadcrumbs/breadcrumbs  
+    </main>
+
 
 
 

@@ -8,9 +8,6 @@ module.exports = {
   root,
   src,
   buildPath: path.join(root, '/build'),
-  pug2html: {
-    beautifyHtml: true
-  },
   copyDependencies: {
     dist: path.join(src, 'local_modules')
   }
