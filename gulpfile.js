@@ -9,4 +9,4 @@ const prettifyHtml = require('./gulp/tasks/prettifyHtml')
 const imageMinify = require('./gulp/tasks/imageMinify')
 const clean = require('./gulp/tasks/clean')
 
-module.exports.start =  gulp.series(pug2html, styles, script, fonts, prettifyHtml, imageMinify, serve)
+module.exports.start =  gulp.series(clean, pug2html, styles, script, fonts, prettifyHtml, imageMinify, serve)

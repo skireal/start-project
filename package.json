@@ -2,9 +2,10 @@
   "name": "template",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp start",
+    "eslint-fix": "eslint ./src/js/** --fix"
   },
   "repository": {
     "type": "git",
@@ -20,8 +21,16 @@
   "devDependencies": {
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
+    "eslint": "^7.21.0",
+    "eslint-config-htmlacademy": "^2.1.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-standard": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
+    "gulp-changed": "^4.0.2",
     "gulp-csscomb": "^3.1.0",
     "gulp-eslint": "^6.0.0",
     "gulp-html-bem-validator": "^1.0.5",

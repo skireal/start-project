@@ -1,8 +1,10 @@
 const gulp = require('gulp')
 const imagemin = require('gulp-imagemin')
+const changed = require('gulp-changed');
 
 module.exports = function imageMinify() {
   return gulp.src('src/img/*.{gif,png,jpg,svg,webp}')
+    .pipe(changed('build/img'))
     .pipe(imagemin([
       imagemin.gifsicle({ interlaced: true }),
       imagemin.mozjpeg({

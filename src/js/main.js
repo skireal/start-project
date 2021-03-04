@@ -1,5 +1,5 @@
-$(function() {
-    console.log('проклятый старый DOM построен');
-});
+'use strict'
 
-
+$(function () {
+    console.log('проклятый старый DOM построен')
+})
