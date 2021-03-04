@@ -10,6 +10,16 @@ block head
 block content
     <main>
     include ../blocks/breadcrumbs/breadcrumbs
+    +breadcrumbs('dede, ff')
+          +breadcrumbs-item('Главная', '/home')
+          +breadcrumbs-item('Услуги', '/services')
+          +breadcrumbs-item('ПАПапвв', '', 'frfr')
+
+
+    include ../blocks/button/button
+
+    +btn('Кнопка-ссылка')
+    +btn('Кнопка-button', 'success')
     </main>
 
 
