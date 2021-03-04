@@ -1,11 +1,11 @@
-// В этом файле должны быть стили для БЭМ-блока breadcrumbs, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+/* Хлебные крошки
+   ========================================================================== */
 
 .breadcrumbs {
   list-style: none;
-  margin-top: $typo-margin-vertical;
-  margin-bottom: $typo-margin-vertical;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 0;
   color: $text-color;
 
