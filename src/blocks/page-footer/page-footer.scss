@@ -3,8 +3,7 @@
 
 .page-footer {
 
-
-	&__wrapper {
-		@include wrapper;
-	}
+    &__wrapper {
+        @include wrapper;
+    }
 }

@@ -1,5 +1,4 @@
 const gulp = require('gulp')
-
 const imageMinify = require('./imageMinify')
 const prettifyHtml = require('./prettifyHtml')
 const styles = require('./styles')

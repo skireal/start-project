@@ -33,8 +33,9 @@ html(class='page  no-js', lang='ru')
 
     block head
       link(rel='stylesheet', href='css/style.css')
-      script
-        include ../js/head-script.js
+      script(src='js/jquery-3.5.1.min.js')
+      //- script
+      //-   include ../js/head-script.js
 
   body
     noscript У вас отключен JavaScript. Это пугает.
@@ -57,4 +58,4 @@ html(class='page  no-js', lang='ru')
             p Контактный телефон: #[a(href='tel:+70000000000') +7 000 000 00 00]
 
     block page-bottom
-      script(src='js/bundle.js')
+      script(src='js/main.js')
