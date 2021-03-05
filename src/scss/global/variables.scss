@@ -34,6 +34,7 @@ $text-color-muted:            $gray;
 $body-bg:                     $white;
 
 $link-color:                  $color-main;
+$link-color--hover:           darken($color-main, 15%);
 
 $border-color:                $gray-lighten;
 
@@ -50,9 +51,14 @@ $font-size-h4:                18px;
 $font-size-h5:                16px;
 $font-size-h6:                16px;
 
+$font-size-sm:                0.75em; // 12px от 16px
+
 $line-height:                 1.5;
 
 $font-family:                 -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$font-family--monospace:     SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+
+$typo-margin-vertical:        1em;
 
 
 
@@ -69,5 +75,15 @@ $mobilesmall:      450px;
 
 
 // Разное
+
+$field-padding-vertical:      5px;
+$field-padding-horizontal:    12px;
+
+$border-radius:               3px;
+$opacity:                     0.7;
+$transition-time:             0.3s;
+$shadow:                      0 4px 2px -2px rgba(0, 0, 0, 0.3);
+
+$toggler-part-height:         2px;
 
 $z-index-modal:               100;
