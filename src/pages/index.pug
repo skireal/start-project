@@ -4,26 +4,39 @@ block meta
   title Главная
    
 block content
-    <main>
-    +breadcrumbs('dede, ff')
-          +breadcrumbs-item('Главная', '/home')
-          +breadcrumbs-item('Услуги', '/services')
-          +breadcrumbs-item('ПАПапвв', '', 'frfr')
+  <main>
+  +breadcrumbs('dede, ff')
+      +breadcrumbs-item('Главная', '/home')
+      +breadcrumbs-item('Услуги', '/services')
+      +breadcrumbs-item('ПАПапвв', '', 'frfr')
 
-    <div class="sddsd">
-      <span class="dffdf">dfdfd</span>
+  <div class="sddsd">
+    <span class="dffdf">dfdfd</span>
+  </div>
+
+  <div class="logo">ssd</div>
+  <p class="logo-p">dsd</p>
+
+
+  <div class="buttons">
+    +btn('Кнопка-ссылка')
+    +btn('Кнопка-button', 'success')
+  </div>
+
+  <section>
+    <div>
+      +pagination()
+          +pagination-item('1', '/1')
+          +pagination-item('...')
+          +pagination-item('4', '/4')
+          +pagination-item('5', '/5', true)
+          +pagination-item('6', '/6')
+          +pagination-item('...')
+          +pagination-item('999', '/999')
     </div>
-
-    <div class="logo">ssd</div>
-    <p class="logo-p">dsd</p>
-
-
-    <div class="buttons">
-      +btn('Кнопка-ссылка')
-      +btn('Кнопка-button', 'success')
-    </div>
-    
-    </main>
+  </section>
+  
+  </main>
 
 //- block append page-bottom
 //-   script(src='js/some.js')
