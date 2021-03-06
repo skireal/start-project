@@ -1,7 +1,6 @@
 const gulp = require('gulp')
 const plumber = require('gulp-plumber')
-const prettify = require('gulp-html-prettify');
-
+const prettify = require('gulp-html-prettify')
 
 module.exports = function prettifyHtml() {
   return gulp.src('build/*.html')

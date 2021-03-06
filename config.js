@@ -8,6 +8,7 @@ let config = {
     'no-js',
   ],
   'alwaysAddBlocks': [
+  'modal'
     // 'sprite-svg',
     // 'sprite-png',
   ],
