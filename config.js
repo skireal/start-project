@@ -8,7 +8,8 @@ let config = {
     'no-js',
   ],
   'alwaysAddBlocks': [
-  'modal'
+      'page-header',
+      'page-footer'
     // 'sprite-svg',
     // 'sprite-png',
   ],

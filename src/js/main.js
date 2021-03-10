@@ -1,9 +1,19 @@
-'use strict'
+ 'use strict'
 
 $(function () {
     console.log('проклятый старый DOM построен')
 
                  
-    //= ../blocks/title/title.js
+    //= ../blocks/page-header/page-header.js
+
+
+    // $(window).on('resize', function() {
+
+    // });
 })
 
+
+
+// $(window).on('load', function() {
+
+// });

@@ -1,7 +1,5 @@
 /* global document window console */
 
-const $ = require('jquery');
-
 // Демо событий модальных окон
 $(document).ready(function(){
   $('#modal-demo-01').on('show.nth.modal', function(){
@@ -267,10 +265,7 @@ $(document).ready(function(){
         that.removeBackdrop()
         callback && callback()
       }
-      // $.support.transition && this.$element.hasClass('fade') ?
-      //   this.$backdrop
-      //     .one('bsTransitionEnd', callbackRemove)
-      //     .emulateTransitionEnd(Modal.BACKDROP_TRANSITION_DURATION) :
+
         callbackRemove()
 
     } else if (callback) {
@@ -278,20 +273,6 @@ $(document).ready(function(){
     }
   }
 
-  // these following methods are used to handle overflowing modals
-
-  // Modal.prototype.handleUpdate = function () {
-  //   this.adjustDialog()
-  // }
-
-  // Modal.prototype.adjustDialog = function () {
-  //   var modalIsOverflowing = this.$element[0].scrollHeight > document.documentElement.clientHeight
-
-  //   this.$element.css({
-  //     paddingLeft:  !this.bodyIsOverflowing && modalIsOverflowing ? this.scrollbarWidth : '',
-  //     paddingRight: this.bodyIsOverflowing && !modalIsOverflowing ? this.scrollbarWidth : ''
-  //   })
-  // }
 
   Modal.prototype.resetAdjustments = function () {
     this.$element.css({

@@ -1,10 +1,4 @@
 @import 'global/variables.scss';
+@import 'global/normalize.scss';
 @import 'global/mixins.scss';
-@import '../blocks/page/page.scss';
-@import '../blocks/breadcrumbs/breadcrumbs.scss';
-@import '../blocks/button/button.scss';
-@import '../blocks/logo/logo.scss';
-@import '../blocks/page-header/page-header.scss';
-@import '../blocks/page-footer/page-footer.scss';
-@import '../blocks/pagination/pagination.scss';
-@import '../blocks/modal/modal.scss';
+@import 'global/start.scss'; 

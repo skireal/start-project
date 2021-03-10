@@ -2,13 +2,10 @@ extends ../pug/layout.pug
 
 block meta
   title Главная
-   
+    
 block content
   <main>
-  +breadcrumbs('dede, ff')
-      +breadcrumbs-item('Главная', '/home')
-      +breadcrumbs-item('Услуги', '/services')
-      +breadcrumbs-item('ПАПапвв', '', 'frfr')
+
 
   <div class="sddsd">
     <span class="dffdf">dfdfd</span>
@@ -19,7 +16,7 @@ block content
 
 
   <div class="buttons">
-    +btn('Кнопка-ссылка')
+    +btn('Кнопка-ссылка')(href='/')
     +btn('Кнопка-button', 'success')
   </div>
 
