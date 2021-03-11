@@ -60,6 +60,8 @@ body {
   -webkit-appearance: none; // stylelint-disable-line
 }
 
+
+
 // area,
 // summary,
 a,
@@ -131,9 +133,13 @@ a {
   background-color: transparent;
   transition: color 0.3s;
 
+  text-decoration: none;
+
   &:hover,
   &:focus {
     color: $link-color--hover;
+
+    text-decoration: none;
   }
 
   // &:visited {
@@ -151,6 +157,8 @@ a {
     }
   }
 }
+
+
 
 hr {
   box-sizing: content-box; // Проблема Firefox

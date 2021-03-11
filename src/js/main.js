@@ -2,18 +2,15 @@
 
 $(function () {
     console.log('проклятый старый DOM построен')
-
-                 
-    //= ../blocks/page-header/page-header.js
-
+  
+    //= ../blocks/burger/burger.js
 
     // $(window).on('resize', function() {
 
     // });
 })
 
-
-
+ 
 // $(window).on('load', function() {
 
 // });

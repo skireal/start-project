@@ -9,7 +9,8 @@ let config = {
   ],
   'alwaysAddBlocks': [
       'page-header',
-      'page-footer'
+      'page-footer',
+      'button'
     // 'sprite-svg',
     // 'sprite-png',
   ],

@@ -1,7 +1,6 @@
 const { series, parallel, src, dest, watch, lastRun } = require('gulp');
 const gulp = require('gulp')
 const serve = require('./gulp/tasks/serve')
-const pug2html = require('./gulp/tasks/pug2html')
 const includeHtml = require('./gulp/tasks/includeHtml')
 const includeJs = require('./gulp/tasks/includeJs')
 const styles = require('./gulp/tasks/styles')
@@ -10,37 +9,15 @@ const imageMinify = require('./gulp/tasks/imageMinify')
 const clean = require('./gulp/tasks/clean')
 const buildJsVendors = require('./gulp/tasks/buildJsVendors')
 const delFolders = require('./gulp/tasks/delFolders')
-
 const fs = require('fs');
 const plumber = require('gulp-plumber');
 const path = require('path');
 
 
 // Глобальные настройки этого запуска
-const buildLibrary = process.env.BUILD_LIBRARY || false;
-const mode = process.env.MODE || 'development';
 const nth = {};
 nth.config = require('./config.js');
-nth.blocksFromHtml = Object.create(nth.config.alwaysAddBlocks); // блоки из конфига сразу добавим в список блоков
-nth.scssImportsList = []; // список импортов стилей
 const dir = nth.config.dir;
-
-// Сообщение для компилируемых файлов
-let doNotEditMsg = '\n ВНИМАНИЕ! Этот файл генерируется автоматически.\n Любые изменения этого файла будут потеряны при следующей компиляции.\n Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n\n';
-
-
-// Пока не буду использовать Pug
-
-// function writePugMixinsFile(cb) {
-//   let allBlocksWithPugFiles = getDirectories('pug');
-//   let pugMixins = '//-' + doNotEditMsg.replace(/\n /gm,'\n  ');
-//   allBlocksWithPugFiles.forEach(function(blockName) {
-//     pugMixins += `include ${dir.blocks.replace(dir.src,'../')}${blockName}/${blockName}.pug\n`;
-//   });
-//   fs.writeFileSync(`${dir.src}pug/mixins.pug`, pugMixins);
-//   cb();
-// }
-// exports.writePugMixinsFile = writePugMixinsFile;
 
 
 function writeStartStylesFile(cb) {

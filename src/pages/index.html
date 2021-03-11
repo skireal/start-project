@@ -1,25 +1,49 @@
- @@include('../blocks/head/head.html', {
-    "title": "Главная",
-    })
+@@include('../blocks/head/head.html', {
+"title": "Главная",
+})
 
 <body>
-            <header class="page-header" role="banner">
-                <div class="page-header__wrapper">
-                    <a class="logo" href="/">
-                        <img src="img/demo-logo.svg" alt="Logo" width="64" height="15">
-                    </a>
-                </div>
-            </header>
-            <main>
-            </main>
-        
-
-            <footer class="page-footer" role="contentinfo">
-                <div class="page-footer__wrapper"></div>
-            </footer>
-
-
+    <header class="page-header" role="banner">
+        <div class="page-header__wrapper">
+            <a class="logo" href="/">
+                <img src="img/demo-logo.svg" alt="Logo" width="64" height="15">
+            </a>
+            <nav class="main-nav" id="nav">
+                <button class="burger main-nav__toggler" aria-label="Показать главное меню" data-target-id="nav" data-target-class-toggle="main-nav--open"><span>Показать главное меню</span></button>
+                <ul class="main-nav__list">
+                    <li class="main-nav__item"><a class="main-nav__link" href="/">Главная страница</a></li>
+                    <li class="main-nav__item  main-nav__item--has-child"><a class="main-nav__link" href="#">Страницы</a>
+                        <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
+                            <ul class="main-nav__list  main-nav__list--lvl-2">
+                                <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="#">О компании</a></li>
+                                <li class="main-nav__item  main-nav__item--has-child  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="#">Услуги</a>
+                                    <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-3">
+                                        <ul class="main-nav__list  main-nav__list--lvl-3">
+                                            <li class="main-nav__item  main-nav__item--lvl-3"><a class="main-nav__link  main-nav__link--lvl-3" href="#">Вёрстка</a></li>
+                                            <li class="main-nav__item  main-nav__item--lvl-3"><a class="main-nav__link  main-nav__link--lvl-3" href="#">Стриптиз</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="#">Ещё одна страница</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--active">
+                        <a class="main-nav__link" href="#">Продукция</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+    </main>
+    <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__wrapper"></div>
+    </footer>
     <script src="js/main.js"></script>
 </body>
 
-</html> 
+</html>
