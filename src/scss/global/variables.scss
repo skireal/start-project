@@ -42,6 +42,15 @@ $border-color:                $gray-lighten;
 
 // Базовая типографика
 
+@font-face {
+    font-family: 'RosatomWebBold';
+    src:
+        url('../fonts/Rosatom-Bold_W.woff2') format('woff2'),
+        url('../fonts/Rosatom-Bold_W.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 $font-size:                   16px;
 
 $font-size-h1:                40px;
