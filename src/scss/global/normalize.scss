@@ -293,3 +293,17 @@ pre {
     background: transparent;
   }
 }
+
+// Данный скрипт останавливает выполнение всех анимаций , если автор не включает класс safe-animation  в элемент.
+
+/* https://github.com/mozdevs/cssremedy/issues/11#issuecomment-462867630 */
+@media (prefers-reduced-motion: reduce) {
+  *:not(.safe-animation),
+  *:not(.safe-animation)::before,
+  *:not(.safe-animation)::after {
+    animation-duration: 0.01s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0s !important;
+    scroll-behavior: auto !important;
+  }
+}
