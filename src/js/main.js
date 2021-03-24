@@ -6,6 +6,7 @@ $(function () {
     //= ../blocks/burger/burger.js
     
     //= ../blocks/slider/slider.js
+    //= ../blocks/tabs/tabs.js
 
     // $(window).on('resize', function() {
 

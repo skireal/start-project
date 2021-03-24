@@ -2,7 +2,7 @@
     ===========================================================*/
 
  if ($('.slider').length) {
-     const swiper = new Swiper('.slider .swiper-container', {
+     let swiper = new Swiper('.slider .swiper-container', {
          // Optional parameters
          loop: true,
 

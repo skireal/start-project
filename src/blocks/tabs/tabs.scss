@@ -1,0 +1,103 @@
+/* Табы
+   ========================================================================== */
+
+.tabs {
+
+
+    margin-top: $typo-margin-vertical;
+    margin-bottom: $typo-margin-vertical;
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        &:after {
+            content: '';
+            display: none;
+            flex-grow: 1;
+            height: 1px;
+            background-color: $border-color;
+
+            @media (min-width: $tabletsmall) {
+                display: block;
+            }
+        }
+
+    }
+
+    &__link-wrap {
+        position: relative;
+
+        border: 1px solid $border-color;
+        color: $text-color-muted;
+        margin: 0;
+
+        &:not(:last-child) {
+            border-right: none;
+        }
+
+
+        @media (max-width: $tabletsmall) {
+            margin: 0 0.3em 0.3em 0;
+
+            &:not(:last-child) {
+                border: 1px solid $border-color;
+            }
+        }
+
+        &--active {
+            color: $text-color;
+            border-bottom: 1px solid transparent;
+
+            @media (max-width: $tabletsmall) {
+                border-bottom: 1px solid transparent;
+            }
+
+            .tabs__link {
+                background-color: #fff;
+            }
+        }
+    }
+
+    &__link {
+        display: block;
+        padding: $field-padding-vertical $field-padding-horizontal;
+        color: currentColor;
+        text-decoration: none;
+        background-color: $gray-lightest;
+
+        &:hover,
+        &:focus {
+            color: currentColor;
+        }
+    }
+
+    &__content-wrapper {
+        display: block;
+        border: 1px solid $border-color;
+        padding: $field-padding-vertical $field-padding-horizontal;
+        border-top: none;
+
+        @media (max-width: $tabletsmall) {
+            border-top: 1px solid $border-color;
+        }
+    }
+
+    &__content-item {
+
+        display: none;
+
+        &>*:last-child {
+            // stylelint-disable-line  selector-combinator-blacklist
+            margin-bottom: 0;
+        }
+
+        &--active {
+            display: block;
+        }
+    }
+}
