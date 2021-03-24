@@ -7,6 +7,7 @@ $(function () {
     
     //= ../blocks/slider/slider.js
     //= ../blocks/tabs/tabs.js
+    //= ../blocks/accordion/accordion.js
 
     // $(window).on('resize', function() {
 
