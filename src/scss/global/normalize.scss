@@ -32,7 +32,7 @@
 body {
   display: flex;           // Исправляем баг в IE для min-height and flexbox (flex-direction:column)
   flex-direction: column;  // и прижимаем footer в IE 10-11
-  min-height: 100%;
+  height: 100vh;
   margin: 0;
   word-break: break-word;
   font-family: $font-family;
@@ -44,6 +44,17 @@ body {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+
+header{
+   flex: 0 0 auto;
+}
+main{
+   flex: 1 0 auto;
+}
+footer{
+   flex: 0 0 auto;
 }
 
 [tabindex='-1']:focus {
