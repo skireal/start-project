@@ -2,6 +2,8 @@ const gulp = require('gulp')
 const plumber = require('gulp-plumber')
 const rigger = require('gulp-rigger')
 const eslint = require('gulp-eslint')
+const babel = require('gulp-babel')
+const terser = require('gulp-terser')
 const beautify = require('gulp-jsbeautifier');
 
 module.exports = function includeJs() {
@@ -11,5 +13,9 @@ module.exports = function includeJs() {
     .pipe(beautify())
     .pipe(eslint())
     .pipe(eslint.format())
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
+    // .pipe(terser())
     .pipe(gulp.dest('build/js')) 
 }
