@@ -1,18 +1,16 @@
-<div class="modal" id="modal-demo-01" tabindex="-1" role="dialog">
-    <div class="modal__dialog" role="document">
-        <div class="modal__content">
-            <div class="modal__header"><span class="close modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
-                <h4 class="modal__title">Заголовок</h4>
-            </div>
+<p><button class="btn" type="button" data-modal-target="#modal-demo-01" data-modal="open">Показать окно с «шапкой» и «подвалом»</button></p>
+<section class="modal  modal--some" id="modal-demo-01" tabindex="-1" aria-hidden="true">
+    <div class="modal__dialog">
+        <div class="modal__content"><button class="close  close--sm modal__close" type="button" aria-label="Закрыть" title="Закрыть" data-modal="close"><span>Закрыть</span></button>
+            <header class="modal__header">
+                <h5 class="modal__title">Заголовок</h5>
+            </header>
             <div class="modal__body">
-                <p>Текст</p>
+                <p>С «Шапкой», «подвалом» и внутр. отступами на контенте.</p>
+                <p>С «Шапкой», «подвалом» и внутр. отступами на контенте.</p>
+                <p>С «Шапкой», «подвалом» и внутр. отступами на контенте.</p>
             </div>
-            <div class="modal__footer">
-                <button class="btn" type="button" data-dismiss="modal">Закрыть</button>
-            </div>
+            <footer class="modal__footer"><button class="btn" type="button" data-modal="close">Закрыть</button></footer>
         </div>
     </div>
-</div>
-<button type="button" class="btn" data-toggle="modal" data-target="#modal-demo-01">
-    <Launch>demo modal</Launch>
-</button>
+</section>
