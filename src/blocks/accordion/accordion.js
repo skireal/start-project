@@ -1,4 +1,5 @@
-// Аккордеон
+/* Аккордеон
+===========================================================*/
 
 let accordionTitle = document.getElementsByClassName('accordion__title');
 let accordionContentList = document.getElementsByClassName('accordion__content');
