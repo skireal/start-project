@@ -48,7 +48,7 @@
 
   &--close {
 
-    > span { // stylelint-disable-line  selector-combinator-blacklist
+    > span {
       transition: background $transition-time 0s;
       background: transparent;
 

@@ -1,7 +1,6 @@
 /* Модальное окно
 ===========================================================*/
 
-
 const bodyPaddingRightOriginal = parseInt(window.getComputedStyle(document.body, null).getPropertyValue('padding-right'));
 const backdrop = document.createElement('div');
 
@@ -47,3 +46,5 @@ document.addEventListener('click', function(event) {
         backdrop.remove();
     }
 });
+
+

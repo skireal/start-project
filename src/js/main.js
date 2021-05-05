@@ -1,13 +1,5 @@
  'use strict'
 
- const ready = function(fn) {
-     if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
-         fn();
-     } else {
-         document.addEventListener('DOMContentLoaded', fn);
-     }
- }
-
  const getScrollSize = function() {
      const outer = document.createElement('div');
      const inner = document.createElement('div');
@@ -22,7 +14,7 @@
 
 
 
- ready(function() {
+document.addEventListener("DOMContentLoaded", function(event) {
    console.log('Проклятый старый DOM построен!');
    // Добавление кастомного свойства с системной шириной скролла
    document.documentElement.style.setProperty('--css-scroll-size', `${getScrollSize()}px`);
@@ -34,6 +26,7 @@
      //= ../blocks/slider/slider.js
      //= ../blocks/tabs/tabs.js
      //= ../blocks/accordion/accordion.js
+     //= ../blocks/smooth-scroll-link/smooth-scroll-link.js
 
      // $(window).on('resize', function() {
 
