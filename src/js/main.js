@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
      //= ../blocks/tabs/tabs.js
      //= ../blocks/accordion/accordion.js
      //= ../blocks/smooth-scroll-link/smooth-scroll-link.js
+     //= ../blocks/field-select/field-select.js
 
      // $(window).on('resize', function() {
 
