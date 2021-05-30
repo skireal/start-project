@@ -29,13 +29,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
      //= ../blocks/smooth-scroll-link/smooth-scroll-link.js
      //= ../blocks/field-select/field-select.js
 
-     // $(window).on('resize', function() {
-
-     // });
+     // window.addEventListener('resize', function(event) {
+     //     ...
+     // }, true);
  });
 
-
-
- // $(window).on('load', function() {
-
- // });
+ // window.onload = function() {
+ //     alert('Страница со всеми стилями и другими ресурсами загружена');
+ // };
