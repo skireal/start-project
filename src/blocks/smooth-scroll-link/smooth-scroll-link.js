@@ -1,7 +1,7 @@
 /* Плавный скролл до якоря
 ===========================================================*/
 
-let smoothScrollLinks = document.querySelectorAll('.smooth-scroll-link__link');
+let smoothScrollLinks = document.querySelectorAll('.smooth-scroll-link');
 
 if (smoothScrollLinks.length > 0) {
 	smoothScrollLinks.forEach(smoothScrollLink => {
@@ -12,7 +12,14 @@ if (smoothScrollLinks.length > 0) {
 		let smoothScrollLink = e.target;
 		if (smoothScrollLink.dataset.goto && document.querySelector(smoothScrollLink.dataset.goto)) {
 			let goToBlock = document.querySelector(smoothScrollLink.dataset.goto);
-			let goToBlockOffset = goToBlock.getBoundingClientRect().top + pageYOffset - smoothScrollLink.closest('.smooth-scroll-link__wrapper').offsetHeight;
+			if(smoothScrollLink.closest('.smooth-scroll-link__wrapper')) {
+				let goToBlockOffset = goToBlock.getBoundingClientRect().top + pageYOffset - smoothScrollLink.closest('.smooth-scroll-link__wrapper').offsetHeight;
+			}
+
+			else {
+				let goToBlockOffset = goToBlock.getBoundingClientRect().top + pageYOffset - 10;
+			}
+			
 
 			window.scrollTo({
 				top: goToBlockOffset,
