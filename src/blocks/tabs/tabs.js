@@ -1,5 +1,3 @@
-
-
 /* Табы
 ===========================================================*/
 
@@ -31,21 +29,25 @@ document.addEventListener('click', function(event) {
  * @param  {string} tabId ID таба, который нужно показать
  */
 function showTab(tabId) {
-    var element = document.querySelector(tabId);
-    if (element && element.classList.contains('tabs__content-item')) {
-        var tabsParent = document.querySelector(tabId).closest('.tabs');
-        var activeTabClassName = 'tabs__link-wrap--active';
-        var activeTabContentClassName = 'tabs__content-item--active';
-        // таб
-        tabsParent.querySelectorAll('.' + activeTabClassName).forEach(function(item) {
-            item.classList.remove(activeTabClassName);
-        });
-        var activeTab = tabsParent.querySelector('[href="' + tabId + '"]') ? tabsParent.querySelector('[href="' + tabId + '"]') : tabsParent.querySelector('[data-target="' + tabId + '"]')
-        activeTab.closest('.tabs__link-wrap').classList.add(activeTabClassName);
-        // контент таба
-        tabsParent.querySelectorAll('.' + activeTabContentClassName).forEach(function(item) {
-            item.classList.remove(activeTabContentClassName);
-        });
-        tabsParent.querySelector(tabId).classList.add(activeTabContentClassName);
+
+    if (document.querySelector('.tabs') != null) {
+        var element = document.querySelector(tabId);
+        if (element && element.classList.contains('tabs__content-item')) {
+            var tabsParent = document.querySelector(tabId).closest('.tabs');
+            var activeTabClassName = 'tabs__link-wrap--active';
+            var activeTabContentClassName = 'tabs__content-item--active';
+            // таб
+            tabsParent.querySelectorAll('.' + activeTabClassName).forEach(function(item) {
+                item.classList.remove(activeTabClassName);
+            });
+            var activeTab = tabsParent.querySelector('[href="' + tabId + '"]') ? tabsParent.querySelector('[href="' + tabId + '"]') : tabsParent.querySelector('[data-target="' + tabId + '"]')
+            activeTab.closest('.tabs__link-wrap').classList.add(activeTabClassName);
+            // контент таба
+            tabsParent.querySelectorAll('.' + activeTabContentClassName).forEach(function(item) {
+                item.classList.remove(activeTabContentClassName);
+            });
+            tabsParent.querySelector(tabId).classList.add(activeTabContentClassName);
+        }
     }
+
 }
