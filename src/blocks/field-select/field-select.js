@@ -33,5 +33,6 @@ if (typeof Object.assign != 'function') {
     new Choices(item, {
       searchEnabled: false,
       placeholderValue: 'Выберите',
+      shouldSort: false
     });
   });

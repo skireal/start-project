@@ -13,7 +13,6 @@ if (smoothScrollLinks.length > 0) {
         let smoothScrollLink = e.target;
         if (smoothScrollLink.dataset.goto && document.querySelector(smoothScrollLink.dataset.goto)) {
             let goToBlock = document.querySelector(smoothScrollLink.dataset.goto);
-            console.log(smoothScrollLink.closest('.smooth-scroll-link__wrapper') != null);
             if (smoothScrollLink.closest('.smooth-scroll-link__wrapper') != null) {
                 goToBlockOffset = goToBlock.getBoundingClientRect().top + pageYOffset - smoothScrollLink.closest('.smooth-scroll-link__wrapper').offsetHeight;
             } else {
