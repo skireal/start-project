@@ -40,7 +40,7 @@ body {
   line-height: $line-height;
   text-align: left;
   color: $text-color;
-  background-color: $body-bg;
+  background-color: #fff;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -140,22 +140,19 @@ img {
 }
 
 a {
-  color: $link-color;
+  color: $corporate;
   background-color: transparent;
   transition: color 0.3s;
 
-  text-decoration: none;
+  text-decoration: underline;
 
   &:hover,
   &:focus {
-    color: $link-color--hover;
+    color: $corporate;
 
     text-decoration: none;
   }
 
-  // &:visited {
-  //   color: $link-color--hover;
-  // }
 
   &[href^='tel:'] {
 
@@ -177,7 +174,7 @@ hr {
   margin-top: $typo-margin-vertical * 2;
   margin-bottom: $typo-margin-vertical * 2;
   border: 0;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid #000;
   overflow: visible;       // Проблема Edge и IE
 }
 
@@ -284,11 +281,10 @@ code {
 kbd {
   padding: 0.06em 0.3em;
   color: $text-color;
-  background-color: $gray-lightest;
   border-radius: $border-radius;
 
   kbd {
-    padding: 0;
+    padding: 0; 
   }
 }
 

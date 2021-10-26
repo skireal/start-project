@@ -85,13 +85,6 @@
 
   &:focus {
     outline: 0;
-
-    &:not(.is-disabled) {
-
-      #{$block-name}__inner {
-        @include field-focus;
-      }
-    }
   }
 
   &:after {

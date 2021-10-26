@@ -1,57 +1,18 @@
 // Переменные
 // ==============================
 
-// Базовые цвета https://colorscheme.ru/color-converter.html
 
-$black:                       hsl(0, 0%, 0%);
-$gray-darkest:                hsl(0, 0%, 10%);
-$gray-darker:                 hsl(0, 0%, 20%);
-$gray-darken:                 hsl(0, 0%, 30%);
-$gray-dark:                   hsl(0, 0%, 40%);
-$gray:                        hsl(0, 0%, 50%);
-$gray-light:                  hsl(0, 0%, 60%);
-$gray-lighten:                hsl(0, 0%, 70%);
-$gray-lighter:                hsl(0, 0%, 80%);
-$gray-lightest:               hsl(0, 0%, 90%);
-$white:                       hsl(0, 0%, 100%);
+// Цвета
 
-$color-main:                  hsl(208, 98%, 43%);
-$color-success:               hsl(120, 39%, 54%);
-$color-danger:                hsl(2, 64%, 58%);
-$color-warning:               hsl(35, 84%, 62%);
+$black: #01142F;
+$corporate: #0260E8;
 
-$color-vk:                    #4a76a8;
-$color-fb:                    #4267b2;
-$color-tw:                    #40a2f5;
-$color-gh:                    #24292e;
-
-
-
-// Семантические цвета
-
-$text-color:                  $gray-darkest;
-$text-color-muted:            $gray;
-$body-bg:                     $white;
-
-$link-color:                  $color-main;
-$link-color--hover:           darken($color-main, 15%);
-
-$border-color:                $gray-lighten;
-
+$text-color: $black;
 
 
 // Базовая типографика
 
-@font-face {
-    font-family: 'RosatomWebBold';
-    src:
-        url('../fonts/Rosatom-Bold_W.woff2') format('woff2'),
-        url('../fonts/Rosatom-Bold_W.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-$font-size:                   16px;
+$font-size:                   20px;
 
 $font-size-h1:                40px;
 $font-size-h2:                32px;
