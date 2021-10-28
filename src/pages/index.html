@@ -1,6 +1,46 @@
-@@include('../blocks/head/head.html', {
-"title": "Главная",
-})
+
+<!DOCTYPE html>
+<html class="page  no-js" lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <meta content="notranslate" name="google">
+    <script>
+    // Убрать на html класс "no-js" : с уровня стилей знаем работает ли JS
+    document.documentElement.classList.remove('no-js');
+
+    // Браузер и ОС
+    function cth(c) { document.documentElement.classList.add(c) }
+    'ontouchstart' in window ? cth('touch') : cth('no-touch');
+    if (typeof InstallTrigger !== 'undefined') cth('firefox');
+    if (/constructor/i.test(window.HTMLElement) || (function(p) { return p.toString() === "[object SafariRemoteNotification]" })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification))) cth('safari');
+    if ( /*@cc_on!@*/ false || !!document.documentMode) cth('ie');
+    if (!( /*@cc_on!@*/ false || !!document.documentMode) && !!window.StyleMedia) cth('edge');
+    if (!!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime)) cth('chrome');
+    if (~navigator.appVersion.indexOf("Win")) cth('windows');
+    if (~navigator.appVersion.indexOf("Mac")) cth('osx');
+    if (~['iPad', 'iPhone', 'iPod'].indexOf(navigator.platform)) cth('ios');
+    if (~navigator.appVersion.indexOf("Linux")) cth('linux');
+ 
+    // Добавление 1vh (использование: height: 100vh; height: calc(var(--vh, 1vh) * 100);) для фикса 100vh на мобилках
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    window.addEventListener('resize', () => {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=default,es5,es6,es7,es2015,es2016,es2017,es2018,es2019%2CNodeList.prototype.forEach%2Cwindow.scroll"></script>
+    <title>@@title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/head.js"></script>
+    <script src="js/vendors.js"></script>
+</head>
 
 <body>
     <header class="page-header">
@@ -85,51 +125,9 @@
             </div>
             <button class="btn card__buy">Купить</button>
         </article>
-<div class="field-select">
-    <div class="field-select__name">Название селекта</div>
-    <div class="field-select__select-wrap"><select class="field-select__select" name="select0" id="select-demo0">
-            <option value="val06">Опция 1 Опция 1 Опция 1 Опция 1 Опция 1 Опция 1 Опция 1 Опция 1 Опция 1 Опция 1 Опция 1 Опция 1 Опция 1 Опция 1 Опция 1 Опция 1 Опция 1 Опция 1 Опция 1 Опция 1 Опция 1 Опция 1 Опция 1 Опция 1 Опция 1 Опция 1 Опция 1 </option>
-            <option value="val05">Опция 2</option>
-        </select><span class="field-select__help-text">Подсказка</span></div>
-</div>
-        <div class="tabs">
-            <ul class="tabs__links" role="tablist">
-                <li class="tabs__link-wrap tabs__link-wrap--active" role="presentation"><a class="tabs__link" href="#tab00" data-toggle="tab" role="tab">Вкладка ноль</a></li>
-                <li class="tabs__link-wrap" role="presentation"><a class="tabs__link" href="#tab01" data-toggle="tab" role="tab">Вкладка один</a></li>
-                <li class="tabs__link-wrap" role="presentation"><a class="tabs__link" href="#tab02" data-toggle="tab" role="tab">Вкладка два</a></li>
-                <li class="tabs__link-wrap" role="presentation"><a class="tabs__link" href="#tab03" data-toggle="tab" role="tab">Вкладка три</a></li>
-            </ul>
-            <div class="tabs__content-wrapper">
-                <div class="tabs__content-item tabs__content-item--active" id="tab00" role="tabpanel">
-                    <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.0</p>
-                </div>
-                <div class="tabs__content-item" id="tab01" role="tabpanel">
-                    <p>За словесными горами в стране, гласных и согласных живут рыбные тексты.1</p>
-                </div>
-                <div class="tabs__content-item" id="tab02" role="tabpanel">
-                    <p>Словесными горами в стране, гласных и согласных живут рыбные тексты.2</p>
-                </div>
-                <div class="tabs__content-item" id="tab03" role="tabpanel">
-                    <p>Горами в стране, гласных и согласных живут рыбные тексты.3</p>
-                </div>
-            </div>
-        </div>
-        <div class="accordion">
-            <div class="accordion__section">
-                <h3 class="accordion__title">Заголовок раздела</h3>
-                <div class="accordion__content">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam enim deleniti dolores ab dignissimos consequuntur ipsum eveniet maxime laborum a, odit, sequi quis doloribus doloremque corrupti in aperiam, recusandae adipisci.</p>
-                </div>
-            </div>
-            <div class="accordion__section">
-                <h3 class="accordion__title">Заголовок раздела2</h3>
-                <div class="accordion__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius facilis quia quasi ipsa fugit consectetur dolores aperiam cupiditate quae pariatur molestiae ut provident assumenda debitis perferendis cum laborum itaque, eaque.</div>
-            </div>
-            <div class="accordion__section">
-                <h3 class="accordion__title">Заголовок раздела2</h3>
-                <div class="accordion__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius facilis quia quasi ipsa fugit consectetur dolores aperiam cupiditate quae pariatur molestiae ut provident assumenda debitis perferendis cum laborum itaque, eaque.</div>
-            </div>
-        </div>
+
+     
+       
     </main>
     <footer class="page-footer">
         <div class="page-footer__wrapper"></div>
