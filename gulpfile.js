@@ -20,27 +20,6 @@ nth.config = require('./config.js');
 const dir = nth.config.dir;
 
 
-function writeStartStylesFile(cb) {
-    const scssRequiresList = [];
-    let allBlocksWithStyleFiles = getDirectories('scss');
-    let styleMixins = ''
-    allBlocksWithStyleFiles.forEach(function(blockName) {
-        if (nth.config.alwaysAddBlocks.indexOf(blockName) == -1) return;
-        scssRequiresList.push(`../blocks/${blockName}/${blockName}.scss`)
-
-    });
-
-    scssRequiresList.forEach(function(src) {
-        styleMixins += `@import '${src}';\n`;
-    });
-
-    fs.writeFileSync(`${dir.src}scss/global/start.scss`, styleMixins);
-    cb();
-}
-exports.writeStartStylesFile = writeStartStylesFile;
-
-
-
 // Функции, не являющиеся задачами Gulp ----------------------------------------
 
 /**
@@ -73,6 +52,6 @@ function getDirectories(ext) {
 
 
 module.exports.start = gulp.series(clean,
-    parallel(writeStartStylesFile, buildJsVendors, includeHtml, fonts, imageMinify),
+    parallel(buildJsVendors, includeHtml, fonts, imageMinify),
     parallel(styles, includeJs),
     delFolders, serve)
