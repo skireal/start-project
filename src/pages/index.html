@@ -1,113 +1,189 @@
-
 <!DOCTYPE html>
-<html class="page  no-js" lang="ru">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="format-detection" content="date=no">
-    <meta name="format-detection" content="address=no">
-    <meta name="format-detection" content="email=no">
-    <meta content="notranslate" name="google">
+<html class="page no-js" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="date=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta content="notranslate" name="google" />
     <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=default,es5,es6,es7,es2015,es2016,es2017,es2018,es2019%2CNodeList.prototype.forEach%2Cwindow.scroll"></script>
     <title>@@title</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/head.js"></script>
-    <script src="js/vendors.js"></script>
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/head.js" defer></script>
+    <script src="js/vendors.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
 
-<body>
+  <body>
     <header class="page-header">
-        <div class="page-header__wrapper">
-            <a class="logo" href="/">
-                <img src="img/demo-logo.svg" alt="Logo" width="64" height="15">
-            </a>
-            <nav class="main-nav" id="nav">
-                <button class="burger main-nav__toggler" aria-label="Показать главное меню" data-target-id="nav" data-target-class-toggle="main-nav--open"><span>Показать главное меню</span></button>
-                <ul class="main-nav__list">
-                    <li class="main-nav__item"><a class="main-nav__link" href="/">Главная страница</a></li>
-                    <li class="main-nav__item  main-nav__item--has-child"><a class="main-nav__link" href="#">Страницы</a>
-                        <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
-                            <ul class="main-nav__list  main-nav__list--lvl-2">
-                                <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="#">О компании</a></li>
-                                <li class="main-nav__item  main-nav__item--has-child  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="#">Услуги</a>
-                                    <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-3">
-                                        <ul class="main-nav__list  main-nav__list--lvl-3">
-                                            <li class="main-nav__item  main-nav__item--lvl-3"><a class="main-nav__link  main-nav__link--lvl-3" href="#">Вёрстка</a></li>
-                                            <li class="main-nav__item  main-nav__item--lvl-3"><a class="main-nav__link  main-nav__link--lvl-3" href="#">Стриптиз</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="#">Ещё одна страница</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="main-nav__item  main-nav__item--active">
-                        <a class="main-nav__link" href="#">Продукция</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a class="main-nav__link" href="#">Контакты</a>
-                    </li>
+      <div class="page-header__wrapper">
+        <a class="logo" href="/">
+          <img src="img/demo-logo.svg" alt="Logo" width="64" height="15" />
+        </a>
+        <nav class="main-nav" id="nav">
+          <button
+            class="burger main-nav__toggler"
+            aria-label="Показать главное меню"
+            data-target-id="nav"
+            data-target-class-toggle="main-nav--open"
+          >
+            <span>Показать главное меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="/">Главная страница</a>
+            </li>
+            <li class="main-nav__item main-nav__item--has-child">
+              <a class="main-nav__link" href="#">Страницы</a>
+              <div
+                class="
+                  main-nav__sublist-wrapper main-nav__sublist-wrapper--lvl-2
+                "
+              >
+                <ul class="main-nav__list main-nav__list--lvl-2">
+                  <li class="main-nav__item main-nav__item--lvl-2">
+                    <a class="main-nav__link main-nav__link--lvl-2" href="#"
+                      >О компании</a
+                    >
+                  </li>
+                  <li
+                    class="
+                      main-nav__item
+                      main-nav__item--has-child
+                      main-nav__item--lvl-2
+                    "
+                  >
+                    <a class="main-nav__link main-nav__link--lvl-2" href="#"
+                      >Услуги</a
+                    >
+                    <div
+                      class="
+                        main-nav__sublist-wrapper
+                        main-nav__sublist-wrapper--lvl-3
+                      "
+                    >
+                      <ul class="main-nav__list main-nav__list--lvl-3">
+                        <li class="main-nav__item main-nav__item--lvl-3">
+                          <a
+                            class="main-nav__link main-nav__link--lvl-3"
+                            href="#"
+                            >Вёрстка</a
+                          >
+                        </li>
+                        <li class="main-nav__item main-nav__item--lvl-3">
+                          <a
+                            class="main-nav__link main-nav__link--lvl-3"
+                            href="#"
+                            >Стриптиз</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="main-nav__item main-nav__item--lvl-2">
+                    <a class="main-nav__link main-nav__link--lvl-2" href="#"
+                      >Ещё одна страница</a
+                    >
+                  </li>
                 </ul>
-            </nav>
-        </div>
-        <div class="smooth-scroll-link__wrapper">
-            <a data-goto='.tabs' href="#" class="smooth-scroll-link__link">К табам</a>
-            <a data-goto='.accordion' href="#" class="smooth-scroll-link__link">К аккордеону</a>
-        </div>
+              </div>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link" href="#">Продукция</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="smooth-scroll-link__wrapper">
+        <a data-goto=".tabs" href="#" class="smooth-scroll-link__link"
+          >К табам</a
+        >
+        <a data-goto=".accordion" href="#" class="smooth-scroll-link__link"
+          >К аккордеону</a
+        >
+      </div>
     </header>
     <main>
-        <p><button class="btn" type="button" data-modal-target="#modal-demo-01" data-modal="open">Показать окно</button></p>
-        <section class="modal  modal--some" id="modal-demo-01" tabindex="-1" aria-hidden="true">
-            <div class="modal__dialog">
-                <div class="modal__content"><button class="close  close--sm modal__close" type="button" aria-label="Закрыть" title="Закрыть" data-modal="close"><span>Закрыть</span></button>
-                    <header class="modal__header">
-                        <h5 class="modal__title">Заголовок</h5>
-                    </header>
-                    <div class="modal__body">
-                        <p>С «Шапкой», «подвалом» и внутр. отступами на контенте.</p>
-                        <p>С «Шапкой», «подвалом» и внутр. отступами на контенте.</p>
-                        <p>С «Шапкой», «подвалом» и внутр. отступами на контенте.</p>
-                    </div>
-                    <footer class="modal__footer"><button class="btn" type="button" data-modal="close">Закрыть</button></footer>
-                </div>
+      <p>
+        <button
+          class="btn"
+          type="button"
+          data-modal-target="#modal-demo-01"
+          data-modal="open"
+        >
+          Показать окно
+        </button>
+      </p>
+      <section
+        class="modal modal--some"
+        id="modal-demo-01"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <div class="modal__dialog">
+          <div class="modal__content">
+            <button
+              class="close close--sm modal__close"
+              type="button"
+              aria-label="Закрыть"
+              title="Закрыть"
+              data-modal="close"
+            >
+              <span>Закрыть</span>
+            </button>
+            <header class="modal__header">
+              <h5 class="modal__title">Заголовок</h5>
+            </header>
+            <div class="modal__body">
+              <p>С «Шапкой», «подвалом» и внутр. отступами на контенте.</p>
+              <p>С «Шапкой», «подвалом» и внутр. отступами на контенте.</p>
+              <p>С «Шапкой», «подвалом» и внутр. отступами на контенте.</p>
             </div>
-        </section>
-        <div class="slider">
-            <!-- Slider main container -->
-            <div class="swiper-container">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="img/slide1.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="img/slide2.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="img/slide1.jpg" alt=""></div>
-                    ...
-                </div>
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
+            <footer class="modal__footer">
+              <button class="btn" type="button" data-modal="close">
+                Закрыть
+              </button>
+            </footer>
+          </div>
         </div>
-        <article class="card  card--mod">
-            <div class="card__new">Новинка!</div>
-            <div class="card__inner">
-                <a class="card__img-wrap" href="good01"><img class="card__img" src="img/demo-product.jpg" alt="Товар1" /></a>
-                <h3 class="card__title"><a href="good01">Товар1</a></h3>
-                <p class="card__descr">Описание1</p>
-                <p class="card__price">7&thinsp;777 ₽</p>
-            </div>
-            <button class="btn card__buy">Купить</button>
-        </article>
-
-     
-       
+      </section>
+      <div class="slider">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/slide1.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="img/slide2.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="img/slide1.jpg" alt="" /></div>
+            ...
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <article class="card card--mod">
+        <div class="card__new">Новинка!</div>
+        <div class="card__inner">
+          <a class="card__img-wrap" href="good01"
+            ><img class="card__img" src="img/demo-product.jpg" alt="Товар1"
+          /></a>
+          <h3 class="card__title"><a href="good01">Товар1</a></h3>
+          <p class="card__descr">Описание1</p>
+          <p class="card__price">7&thinsp;777 ₽</p>
+        </div>
+        <button class="btn card__buy">Купить</button>
+      </article>
     </main>
     <footer class="page-footer">
-        <div class="page-footer__wrapper"></div>
+      <div class="page-footer__wrapper"></div>
     </footer>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
