@@ -26,9 +26,11 @@ document.addEventListener('DOMContentLoaded', function (event) {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
 
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth',
-      });
+      if (document.querySelector(this.getAttribute('href'))) {
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth',
+        });
+      }
     });
   });
 
