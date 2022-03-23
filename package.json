@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skireal/start-project.git"
+    "url": "github:skireal/start-project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/skireal/start-project/issues"
+    "url": "github:skireal/start-project/issues"
   },
-  "homepage": "https://github.com/skireal/start-project#readme",
+  "homepage": "github:skireal/start-project#readme",
   "devDependencies": {
     "@babel/core": "^7.13.16",
     "@babel/preset-env": "^7.13.15",
