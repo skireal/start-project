@@ -1,0 +1,26 @@
+{
+  "name": "simple-starter",
+  "version": "1.0.0",
+  "description": "Простой стартовый шаблон с Gulp 4",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "keywords": ["gulp", "frontend", "starter", "template"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.56.0",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "browser-sync": "^2.27.0",
+    "del": "^6.0.0"
+  }
+}
