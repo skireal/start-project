@@ -5,17 +5,18 @@ const shorthand = require('gulp-shorthand')
 const autoprefixer = require('gulp-autoprefixer')
 const csscomb = require('gulp-csscomb')
 const sourcemaps = require('gulp-sourcemaps')
+const gulpif = require('gulp-if')
+
+const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = function styles() {
-  return gulp.src('src/scss/*.scss')
-    .pipe(plumber())
-    .pipe(sourcemaps.init())
-    .pipe(sass())
-    .pipe(autoprefixer({
-      cascade: false
-    }))
-    .pipe(shorthand())
-    .pipe(csscomb())
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('build/css'))
+    return gulp.src('src/scss/*.scss')
+        .pipe(plumber())
+        .pipe(gulpif(!isProd, sourcemaps.init()))
+        .pipe(sass())
+        .pipe(autoprefixer({cascade: false}))
+        .pipe(shorthand())
+        .pipe(csscomb())
+        .pipe(gulpif(!isProd, sourcemaps.write('.')))
+        .pipe(gulp.dest('build/css'))
 }

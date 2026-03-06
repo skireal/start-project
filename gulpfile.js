@@ -56,3 +56,8 @@ module.exports.start = gulp.series(clean,
     parallel(buildJsVendors, includeHtml, fonts, imageMinify, imageWebp),
     parallel(styles, includeJs),
     delFolders, serve)
+
+module.exports.build = gulp.series(clean,
+    parallel(buildJsVendors, includeHtml, fonts, imageMinify, imageWebp),
+    parallel(styles, includeJs),
+    delFolders)
