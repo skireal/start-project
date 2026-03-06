@@ -1,6 +1,10 @@
 { 
   "env": {
+    "browser": true,
     "jquery": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020
   },
   "overrides": [
     {
@@ -17,7 +21,8 @@
           "error",
           "never"
         ],
-        "quotes": [2, "single", { "avoidEscape": true }]
+        "quotes": [2, "single", { "avoidEscape": true }],
+        "eol-last": "off"
       }
     }
   ]
