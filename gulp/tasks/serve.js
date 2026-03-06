@@ -1,5 +1,6 @@
 const gulp = require('gulp')
 const imageMinify = require('./imageMinify')
+const imageWebp = require('./imageWebp')
 const styles = require('./styles')
 const pug2html = require('./pug2html')
 const includeHtml = require('./includeHtml')
@@ -21,7 +22,7 @@ module.exports = function serve(cb) {
         cors: true
     })
 
-    gulp.watch('src/img/*.{gif,png,jpg,svg,webp}', gulp.series(imageMinify, readyReload))
+    gulp.watch('src/img/**/*.{gif,png,jpg,jpeg,svg,webp}', gulp.series(imageMinify, imageWebp, readyReload))
     gulp.watch('src/**/*.scss', gulp.series(styles, cb => gulp.src('build/css').pipe(server.stream()).on('end', cb)))
     gulp.watch('src/js/**/*.js', gulp.series(includeJs, delFolders, readyReload))
     // gulp.watch('src/**/*.pug', gulp.series(pug2html, prettifyHtml, readyReload))
