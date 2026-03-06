@@ -8,6 +8,7 @@ const fonts = require('./gulp/tasks/fonts')
 const imageMinify = require('./gulp/tasks/imageMinify')
 const imageWebp = require('./gulp/tasks/imageWebp')
 const svgSprite = require('./gulp/tasks/svgSprite')
+const generateFavicons = require('./gulp/tasks/favicons')
 const clean = require('./gulp/tasks/clean')
 const buildJsVendors = require('./gulp/tasks/buildJsVendors')
 const delFolders = require('./gulp/tasks/delFolders')
@@ -54,11 +55,11 @@ function getDirectories(ext) {
 
 
 module.exports.start = gulp.series(clean,
-    parallel(buildJsVendors, includeHtml, fonts, imageMinify, imageWebp, svgSprite),
+    parallel(buildJsVendors, includeHtml, fonts, imageMinify, imageWebp, svgSprite, generateFavicons),
     parallel(styles, includeJs),
     delFolders, serve)
 
 module.exports.build = gulp.series(clean,
-    parallel(buildJsVendors, includeHtml, fonts, imageMinify, imageWebp, svgSprite),
+    parallel(buildJsVendors, includeHtml, fonts, imageMinify, imageWebp, svgSprite, generateFavicons),
     parallel(styles, includeJs),
     delFolders)
