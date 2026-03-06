@@ -6,6 +6,7 @@ const includeJs = require('./gulp/tasks/includeJs')
 const styles = require('./gulp/tasks/styles')
 const fonts = require('./gulp/tasks/fonts')
 const imageMinify = require('./gulp/tasks/imageMinify')
+const imageWebp = require('./gulp/tasks/imageWebp')
 const clean = require('./gulp/tasks/clean')
 const buildJsVendors = require('./gulp/tasks/buildJsVendors')
 const delFolders = require('./gulp/tasks/delFolders')
@@ -52,6 +53,6 @@ function getDirectories(ext) {
 
 
 module.exports.start = gulp.series(clean,
-    parallel(buildJsVendors, includeHtml, fonts, imageMinify),
+    parallel(buildJsVendors, includeHtml, fonts, imageMinify, imageWebp),
     parallel(styles, includeJs),
     delFolders, serve)

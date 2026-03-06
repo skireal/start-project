@@ -30,10 +30,11 @@
 }
 
 body {
-  display: flex;           // Исправляем баг в IE для min-height and flexbox (flex-direction:column)
-  flex-direction: column;  // и прижимаем footer в IE 10-11
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
   margin: 0;
+  scrollbar-gutter: stable;
   word-break: break-word;
   font-family: $font-family;
   font-size: $font-size;
