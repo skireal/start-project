@@ -23,7 +23,8 @@
     <meta name="theme-color" content="#ffffff">
     <title>Название сайта</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/vendors.js"></script>
+    <script src="js/vendors.js" defer></script>
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -37,14 +38,13 @@
                     class="burger main-nav__toggler"
                     type="button"
                     aria-label="Открыть меню"
+                    aria-expanded="false"
                     data-target-id="nav"
                     data-target-class-toggle="main-nav--open"
-                >
-                    <span>Меню</span>
-                </button>
+                ></button>
                 <ul class="main-nav__list">
                     <li class="main-nav__item main-nav__item--active">
-                        <a class="main-nav__link" href="/">Главная</a>
+                        <a class="main-nav__link" href="/" aria-current="page">Главная</a>
                     </li>
                     <li class="main-nav__item">
                         <a class="main-nav__link" href="#">О компании</a>
@@ -72,7 +72,6 @@
         <div class="page-footer__wrapper"></div>
     </footer>
 
-    <script src="js/main.js"></script>
 </body>
 
 </html>
