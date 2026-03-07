@@ -5,12 +5,12 @@
 // Цвета
 
 $black: #01142F;
-$white: #ffffff;
-$gray-dark: #333333;
-$gray: #777777;
-$gray-light: #999999;
+$white: #fff;
+$gray-dark: #333;
+$gray: #777;
+$gray-light: #999;
 $gray-lighten: #e0e0e0;
-$gray-lighter: #cccccc;
+$gray-lighter: #ccc;
 $gray-lightest: #f5f5f5;
 $red: #dc3545;
 $corporate: #0260E8;
@@ -24,49 +24,49 @@ $border-color: $gray-lighten;
 
 // Базовая типографика
 
-$font-size:                   20px;
+$font-size: 20px;
 
-$font-size-h1:                40px;
-$font-size-h2:                32px;
-$font-size-h3:                24px;
-$font-size-h4:                18px;
-$font-size-h5:                16px;
-$font-size-h6:                16px;
+$font-size-h1: 40px;
+$font-size-h2: 32px;
+$font-size-h3: 24px;
+$font-size-h4: 18px;
+$font-size-h5: 16px;
+$font-size-h6: 16px;
 
-$font-size-sm:                0.75em; // 12px от 16px
+$font-size-sm: 0.75em; // 12px от 16px
 
-$line-height:                 1.5;
+$line-height: 1.5;
 
-$font-family:                 -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-$font-family--monospace:     SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+$font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$font-family--monospace: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 
-$typo-margin-vertical:        1em;
+$typo-margin-vertical: 1em;
 
 
 
 // Ширины
 
-$desktop:          1800px;
-$notebook:         1380px;
-$notebooksmall:    1170px;
-$tablet:           1025px;
-$tabletsmall:      769px;
-$screen-md:        768px;
-$mobile:           600px;
-$mobilesmall:      450px;
+$desktop: 1800px;
+$notebook: 1380px;
+$notebooksmall: 1170px;
+$tablet: 1025px;
+$tabletsmall: 769px;
+$screen-md: 768px;
+$mobile: 600px;
+$mobilesmall: 450px;
 
 
 
 // Разное
 
-$field-padding-vertical:      5px;
-$field-padding-horizontal:    12px;
+$field-padding-vertical: 5px;
+$field-padding-horizontal: 12px;
 
-$border-radius:               3px;
-$opacity:                     0.7;
-$transition-time:             0.3s;
-$shadow:                      0 4px 2px -2px rgba(0, 0, 0, 0.3);
+$border-radius: 3px;
+$opacity: 0.7;
+$transition-time: 0.3s;
+$shadow: 0 4px 2px -2px rgb(0 0 0 / 30%);
 
-$toggler-part-height:         2px;
+$toggler-part-height: 2px;
 
-$z-index-modal:               100;
+$z-index-modal: 100;

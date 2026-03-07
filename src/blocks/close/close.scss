@@ -25,8 +25,8 @@
     color: transparent;
     background: transparent;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       content: '';
       position: absolute;
       top: 0;
@@ -37,11 +37,11 @@
       transform-origin: 50% 50%;
     }
 
-    &:before {
+    &::before {
       transform: rotate3d(0, 0, 1, 45deg);
     }
 
-    &:after {
+    &::after {
       transform: rotate3d(0, 0, 1, -45deg);
     }
   }

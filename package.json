@@ -6,7 +6,9 @@
   "scripts": {
     "start": "gulp start",
     "build": "cross-env NODE_ENV=production gulp build",
-    "eslint-fix": "eslint ./src/js/** --fix"
+    "eslint-fix": "eslint ./src/js/** --fix",
+    "scss-lint": "stylelint \"src/scss/**/*.scss\" \"src/blocks/**/*.scss\"",
+    "scss-fix": "stylelint \"src/scss/**/*.scss\" \"src/blocks/**/*.scss\" --fix"
   },
   "repository": {
     "type": "git",
@@ -33,7 +35,6 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-standard": "^5.0.0",
-    "fs": "0.0.1-security",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-babel": "^8.0.0",
@@ -43,14 +44,10 @@
     "gulp-csscomb": "^3.1.0",
     "gulp-eslint": "^6.0.0",
     "gulp-file-include": "^2.3.0",
-    "gulp-html-bem-validator": "^1.0.5",
     "gulp-html-prettify": "0.0.1",
     "gulp-if": "^3.0.0",
     "gulp-imagemin": "^7.1.0",
-    "gulp-jsbeautifier": "^3.0.1",
     "gulp-plumber": "^1.2.1",
-    "gulp-pug": "^4.0.1",
-    "gulp-rename": "^2.0.0",
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^5.1.0",
     "gulp-shorthand": "^1.1.0",
@@ -58,10 +55,10 @@
     "gulp-svgmin": "^3.0.0",
     "gulp-svgstore": "^7.0.1",
     "gulp-terser": "^2.1.0",
-    "gulp-w3c-html-validator": "^3.0.0",
     "gulp-webp": "^4.0.1",
-    "path": "^0.12.7",
-    "sass": "^1.70.0"
+    "sass": "^1.70.0",
+    "stylelint": "^15.0.0",
+    "stylelint-config-standard-scss": "^9.0.0"
   },
   "dependencies": {
     "choices.js": "^9.0.1",

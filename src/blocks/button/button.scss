@@ -38,7 +38,7 @@
     &:active,
     &:focus {
         outline: 0;
-        box-shadow: 0 0 0 2px rgba(256, 256, 256, 0.8);
+        box-shadow: 0 0 0 2px rgb(256 256 256 / 80%);
     }
 
     &--disabled,

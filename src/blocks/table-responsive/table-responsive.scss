@@ -75,7 +75,7 @@
         border-right: 0 !important; // stylelint-disable-line  declaration-no-important
         border-left: 0 !important; // stylelint-disable-line  declaration-no-important
 
-        &:before { // stylelint-disable-line  max-nesting-depth
+        &::before { // stylelint-disable-line  max-nesting-depth
           content: attr(data-label);
           display: block;
           font-weight: 700;

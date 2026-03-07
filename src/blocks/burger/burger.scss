@@ -25,8 +25,8 @@
     background: $gray-dark;
     transition: background $transition-time $transition-time;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       content: '';
       position: absolute;
       left: 0;
@@ -37,11 +37,11 @@
       transition: top $transition-time $transition-time, transform $transition-time;
     }
 
-    &:before {
+    &::before {
       top: -10px;
     }
 
-    &:after {
+    &::after {
       top: 10px;
     }
   }
@@ -52,17 +52,17 @@
       transition: background $transition-time 0s;
       background: transparent;
 
-      &:before,
-      &:after {
+      &::before,
+      &::after {
         top: 0;
         transition: top $transition-time, transform $transition-time $transition-time;
       }
 
-      &:before {
+      &::before {
         transform: rotate3d(0, 0, 1, 45deg);
       }
 
-      &:after {
+      &::after {
         transform: rotate3d(0, 0, 1, -45deg);
       }
     }

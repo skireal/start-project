@@ -62,7 +62,7 @@
       cursor: not-allowed;
     }
 
-    &:before {
+    &::before {
       content: '';
       position: absolute;
       top: 5px;
@@ -82,7 +82,7 @@
       background: $gray-lighter;
     }
 
-    &:after {
+    &::after {
       content: '';
       position: absolute;
       top: 9px;

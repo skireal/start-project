@@ -3,7 +3,7 @@
 
 .field-select {
 
-  $block-name:                &; // #{$block-name}__element
+  $block-name: &; // #{$block-name}__element
 
   display: block;
   margin-bottom: $typo-margin-vertical;
@@ -12,7 +12,7 @@
     @include field-name;
   }
 
-  &__select-wrap {}
+  &__select-wrap {} /* stylelint-disable-line block-no-empty */
 
   // Оформление штатного селекта
   // &__select {
@@ -79,7 +79,7 @@
 /** @define choices */
 .choices {
 
-  $block-name:                &; // #{$block-name}__element
+  $block-name: &; // #{$block-name}__element
 
   position: relative;
 
@@ -87,7 +87,7 @@
     outline: 0;
   }
 
-  &:after {
+  &::after {
     content: '';
     position: absolute;
     top: 7px;
@@ -101,7 +101,7 @@
     transition: all 0.3s;
   }
 
-  &.is-open:after {
+  &.is-open::after {
     transform: translateY(7px) rotate(135deg);
   }
 

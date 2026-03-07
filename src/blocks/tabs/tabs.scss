@@ -15,7 +15,7 @@
         padding: 0;
         list-style: none;
 
-        &:after {
+        &::after {
             content: '';
             display: none;
             flex-grow: 1;

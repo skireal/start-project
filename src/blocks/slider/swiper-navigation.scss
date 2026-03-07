@@ -19,19 +19,18 @@
   align-items: center;
   justify-content: center;
   color: var(--swiper-navigation-color, var(--swiper-theme-color));
-  background-image: url(../img/arrow-next.svg);
+  background-image: url("../img/arrow-next.svg");
   background-size: 100% 100%;
   &.swiper-button-disabled {
     opacity: 0.35;
     cursor: auto;
     pointer-events: none;
   }
-  &:after {
-    font-family: swiper-icons;
+  &::after {
+    font-family: swiper-icons; /* stylelint-disable-line font-family-no-missing-generic-family-keyword */
     font-size: var(--swiper-navigation-size);
     text-transform: none !important;
     letter-spacing: 0;
-    text-transform: none;
     font-variant: initial;
     line-height: 1;
 
@@ -45,7 +44,7 @@
 
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-  &:after {
+  &::after {
     content: 'prev';
   }
   left: 10px;
@@ -53,7 +52,7 @@
 }
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-  &:after {
+  &::after {
     content: 'next';
   }
   right: 10px;
