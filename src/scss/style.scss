@@ -1,14 +1,6 @@
 @import 'global/variables.scss';
 @import 'global/normalize.scss';
 @import 'global/mixins.scss';
-@import 'global/start.scss'; 
-@import '../blocks/close/close.scss';
+@import 'global/start.scss';
 @import '../blocks/burger/burger.scss';
-@import '../blocks/main-nav/main-nav.scss'; 
-@import '../blocks/slider/swiper.scss'; 
-@import '../blocks/slider/swiper-navigation.scss'; 
-@import '../blocks/card/card.scss'; 
-@import '../blocks/tabs/tabs.scss'; 
-@import '../blocks/accordion/accordion.scss'; 
-@import '../blocks/modal/modal.scss'; 
-@import '../blocks/field-select/field-select.scss'; 
+@import '../blocks/main-nav/main-nav.scss';
