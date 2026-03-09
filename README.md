@@ -137,6 +137,48 @@ gulp/tasks/          # задачи Gulp
 
 ---
 
+## Figma-токены
+
+Скрипт забирает локальные стили из Figma (цвета, типографику, тени) и генерирует SCSS-переменные.
+
+### Настройка
+
+```bash
+cp .env.example .env
+```
+
+Заполни `.env`:
+
+```
+FIGMA_TOKEN=your_personal_access_token   # figma.com → Account Settings → Personal access tokens
+FIGMA_FILE_ID=your_file_id               # из URL: figma.com/design/FILE_ID/...
+```
+
+### Запуск
+
+```bash
+npm run figma:tokens
+```
+
+Генерирует `src/scss/global/_tokens.scss`. Подключи один раз в `style.scss`:
+
+```scss
+@import 'global/tokens.scss';
+```
+
+### Что генерируется
+
+| Тип стиля Figma | SCSS-переменная |
+|-----------------|-----------------|
+| Fill (Solid) | `$token-<name>: #hex;` |
+| Text | `$token-<name>-size`, `-weight`, `-line-height`, `-letter-spacing` |
+| Effect (Drop Shadow) | `$token-<name>: 0px 4px 8px 0px rgba(...)` |
+
+Имя переменной = kebab-case из имени стиля в Figma.
+Пример: `Colors/Primary/Blue 500` → `$token-colors-primary-blue-500`.
+
+---
+
 ## Продакшн-сборка
 
 ```bash

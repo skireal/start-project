@@ -12,6 +12,7 @@ Thumbs.db
 *.log*
 node_modules/
 package-lock.json
+.env
 
 # Папка с собранными файлами проекта
 build/

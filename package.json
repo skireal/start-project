@@ -9,7 +9,8 @@
     "eslint-fix": "eslint ./src/js/** --fix",
     "scss-lint": "stylelint \"src/scss/**/*.scss\" \"src/blocks/**/*.scss\"",
     "scss-fix": "stylelint \"src/scss/**/*.scss\" \"src/blocks/**/*.scss\" --fix",
-    "format": "prettier --write \"src/**/*.{html,scss,js}\""
+    "format": "prettier --write \"src/**/*.{html,scss,js}\"",
+    "figma:tokens": "node scripts/figma-tokens.js"
   },
   "browserslist": [
     "last 2 versions",
@@ -33,6 +34,7 @@
     "browser-sync": "^2.26.14",
     "cross-env": "^7.0.3",
     "del": "^6.0.0",
+    "dotenv": "^16.6.1",
     "eslint": "^7.21.0",
     "eslint-config-htmlacademy": "^2.1.0",
     "gulp": "^4.0.2",
