@@ -1,15 +1,6 @@
 {
-  "trailingComma": "es5",
-  "tabWidth": 2,
-  "overrides": [
-    {
-        "files": "*.scss",
-        "options": {
-            "tabWidth": 4
-        }
-    }
-],
-  "semi": true,
+  "semi": false,
   "singleQuote": true,
-  "jsxSingleQuote": true
+  "tabWidth": 4,
+  "trailingComma": "es5"
 }

@@ -1,6 +1,15 @@
 /* Модальное окно
 ===========================================================*/
 
+function getScrollSize() {
+    const div = document.createElement('div')
+    div.style.cssText = 'width:99px;height:99px;overflow:scroll;position:absolute;top:-9999px;'
+    document.body.appendChild(div)
+    const scrollSize = div.offsetWidth - div.clientWidth
+    document.body.removeChild(div)
+    return scrollSize
+}
+
 const bodyPaddingRightOriginal = parseInt(window.getComputedStyle(document.body, null).getPropertyValue('padding-right'));
 const backdrop = document.createElement('div');
 
