@@ -1,0 +1,80 @@
+/* Кнопки
+   ========================================================================== */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0;
+    border-radius: 50px;
+    border: 0;
+    width: 276px;
+    height: 59px;
+    padding: 10px 20px;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    user-select: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    font-family: $font-family;
+    text-decoration: none;
+    text-transform: none;
+    color: #fff;
+    background-color: #000;
+    background-image: none;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover,
+    &:focus {
+        opacity: 0.9;
+    }
+
+    &:active,
+    &:focus {
+        outline: 0;
+        box-shadow: 0 0 0 2px rgb(256 256 256 / 80%);
+    }
+
+    &--disabled,
+    &:disabled {
+        opacity: 0.8;
+        cursor: not-allowed;
+
+        @at-root a.btn--disabled {
+            pointer-events: none;
+        }
+
+        &:hover,
+        &:focus {
+            opacity: 0.8;
+            cursor: not-allowed;
+        }
+    }
+
+    sup {
+        position: relative;
+        top: -5px;
+    }
+
+    &--white {
+        background-color: #fff;
+        color: #000;
+    }
+
+    &--small {
+        height: 46px;
+        width: 212px;
+    }
+
+    &--smaller {
+        height: 35px;
+        width: 189px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}

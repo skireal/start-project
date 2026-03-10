@@ -2,5 +2,35 @@
 @import 'global/normalize.scss';
 @import 'global/mixins.scss';
 @import 'global/start.scss';
-@import '../blocks/burger/burger.scss';
-@import '../blocks/main-nav/main-nav.scss';
+
+// Блоки — раскомментировать нужные или добавить свои
+@import 'blocks/burger.scss';
+@import 'blocks/main-nav.scss';
+@import 'blocks/button.scss';
+@import 'blocks/page-header.scss';
+@import 'blocks/page-footer.scss';
+
+// @import 'blocks/accordion.scss';
+// @import 'blocks/breadcrumbs.scss';
+// @import 'blocks/card.scss';
+// @import 'blocks/close.scss';
+// @import 'blocks/embed-responsive.scss';
+// @import 'blocks/field-actions.scss';
+// @import 'blocks/field-checkbox.scss';
+// @import 'blocks/field-num.scss';
+// @import 'blocks/field-radio.scss';
+// @import 'blocks/field-select.scss';
+// @import 'blocks/field-text.scss';
+// @import 'blocks/form.scss';
+// @import 'blocks/logo.scss';
+// @import 'blocks/modal.scss';
+// @import 'blocks/page-footer.scss';
+// @import 'blocks/page-header.scss';
+// @import 'blocks/pagination.scss';
+// @import 'blocks/slider.scss';
+// @import 'blocks/smooth-scroll-link.scss';
+// @import 'blocks/social.scss';
+// @import 'blocks/sprite-svg.scss';
+// @import 'blocks/table.scss';
+// @import 'blocks/table-responsive.scss';
+// @import 'blocks/tabs.scss';

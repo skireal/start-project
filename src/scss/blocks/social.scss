@@ -1,0 +1,37 @@
+/* Кнопки соцсетей
+   ========================================================================== */
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: $typo-margin-vertical;
+    margin-bottom: $typo-margin-vertical;
+    padding: 0;
+    list-style: none;
+
+    &__link-wrap {
+        margin-right: 10px;
+    }
+
+    &__link {
+        display: block;
+        padding: 5px;
+        background-color: $gray;
+
+        .social__link-wrap--fb & {
+            background-color: #3b5998;
+        }
+
+        svg {
+            display: block;
+            width: 16px;
+            height: 16px;
+            fill: #fff;
+        }
+    }
+
+    &__text {
+        @include hide-text;
+    }
+}
